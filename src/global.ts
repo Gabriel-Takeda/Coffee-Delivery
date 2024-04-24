@@ -11,11 +11,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background: ${(props) => props.theme['base-card']};
         font-family: 'Roboto', sans-serif;
-    }
-
-    border-style, input-security, textarea, button {
-        font-family: 'Baloo 2', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
+        font-weight: 300;
     }
 `

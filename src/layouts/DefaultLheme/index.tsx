@@ -4,10 +4,13 @@ import { LayoutContainer } from "./styles"
 
  const DefaultLayout = () => {
     return (
-        <LayoutContainer>
-            <Header/>
+        <>
+            <LayoutContainer>
+                <Header/>
+            </LayoutContainer>
             <Outlet/>
-        </LayoutContainer>
+        </>
+
     )
  }
 

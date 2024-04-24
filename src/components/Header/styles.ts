@@ -6,13 +6,13 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     align-items: center;
 `
-
 export const ButtonCart = styled.button`
     background-color: ${(props) => props.theme['yellow-light']};
 
     border-radius: 8px;
     width: 1.9rem;
     height: 1.9rem;
+    padding-top: 0.2rem;
 
     border-color: transparent;
     cursor: pointer;
