@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
 `
 export const ButtonCart = styled.button`
-    background-color: ${(props) => props.theme['yellow-light']};
+    background: ${(props) => props.theme['yellow-light']};
 
     border-radius: 8px;
     width: 1.9rem;

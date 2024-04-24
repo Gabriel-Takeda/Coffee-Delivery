@@ -44,13 +44,13 @@ export const TextTitle = styled.h1`
     color: ${(props) => props.theme['base-subtitle']};
 `
 
-export const ListAtributes = styled.div`
-    display: flex;
+export const GridCAtributesContainer = styled.div`
+    display: grid;
     height: 5.25rem;
-    background: pink;
     justify-content: space-between;
     font-size: 16px;
 
-    
+    grid-template-columns: 45% 55%;
+    grid-auto-rows: 50%;
 `
 

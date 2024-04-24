@@ -1,4 +1,5 @@
-import { ImageContainer ,IntroLayout, ListAtributes, PrincipalTitle, TextContainer, TextTitle } from "./styles"
+import { ImageContainer ,IntroLayout, GridCAtributesContainer, PrincipalTitle, TextContainer, TextTitle } from "./styles"
+import { AtributesItemList } from './components/AtributesItemList'
 import Coffee from '../../assets/Coffee.svg'
 
 const Home = () => {
@@ -18,9 +19,9 @@ const Home = () => {
                     qualquer hora
                 </TextTitle>
                 
-                <ListAtributes>
-                    <h1>CARACTERISTICAS DA LOJA(FALTA IMPLEMENTAR)</h1>
-                </ListAtributes>
+                <GridCAtributesContainer>
+                    <AtributesItemList/>
+                </GridCAtributesContainer>
 
             </TextContainer>
             <ImageContainer>
