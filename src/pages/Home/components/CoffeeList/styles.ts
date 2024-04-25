@@ -10,5 +10,5 @@ export const CoffeeListTitle = styled.h1`
   font-family: "Baloo 2", sans-serif;
   font-weight: 800;
   margin-bottom: 1.2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 `;

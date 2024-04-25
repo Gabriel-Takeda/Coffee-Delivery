@@ -1,5 +1,5 @@
 import { ImageContainer, IntroLayout } from "./styles";
-import Coffee from "../../assets/Coffee.svg";
+import ImageCoffee from "../../assets/ImageCoffee.svg";
 import { CoffeeList } from "./components/CoffeeList";
 import { IntroElements } from "./components/IntroElements";
 
@@ -10,7 +10,7 @@ const Home = () => {
         <IntroElements />
 
         <ImageContainer>
-          <img src={Coffee} />
+          <img src={ImageCoffee} />
         </ImageContainer>
       </IntroLayout>
       <CoffeeList />
