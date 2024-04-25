@@ -9,8 +9,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: ${(props) => props.theme['base-card']};
+        background: ${(props) => props.theme["white"]};
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
     }
-`
+`;

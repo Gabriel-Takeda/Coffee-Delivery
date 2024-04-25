@@ -1,34 +1,21 @@
-import { ImageContainer ,IntroLayout, GridCAtributesContainer, PrincipalTitle, TextContainer, TextTitle } from "./styles"
-import { AtributesItemList } from './components/AtributesItemList'
-import Coffee from '../../assets/Coffee.svg'
+import { ImageContainer, IntroLayout } from "./styles";
+import Coffee from "../../assets/Coffee.svg";
+import { CoffeeList } from "./components/CoffeeList";
+import { IntroElements } from "./components/IntroElements";
 
 const Home = () => {
-    return (
-        <IntroLayout>
-            <TextContainer>
+  return (
+    <>
+      <IntroLayout>
+        <IntroElements />
 
-                <PrincipalTitle>
-                    Encontre o café perfeito
-                    <br/>
-                    para qualquer hora do dia
-                </PrincipalTitle>
+        <ImageContainer>
+          <img src={Coffee} />
+        </ImageContainer>
+      </IntroLayout>
+      <CoffeeList />
+    </>
+  );
+};
 
-                <TextTitle>
-                    Com o Coffee Delivery você recebe seu café onde estiver, a
-                    <br/>
-                    qualquer hora
-                </TextTitle>
-                
-                <GridCAtributesContainer>
-                    <AtributesItemList/>
-                </GridCAtributesContainer>
-
-            </TextContainer>
-            <ImageContainer>
-                <img src={Coffee}/>
-            </ImageContainer>
-        </IntroLayout>
-    )
-}
-
-export { Home }
+export { Home };
