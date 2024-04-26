@@ -1,20 +1,17 @@
 import { StyledButton } from "./StyledButtom";
 import { CoffeeDescription, CoffeeFooter, CoffeeTitle, ElementBox, ImageElement, InternBox, InternBoxGrid } from "./styles";
 export interface IElementProps {
-  isLeft: boolean;
-  isRight: boolean;
-  image?: string;
-  type?: string[];
-  name?: string
-  description?:string;
-  id?: string;
+  name: string
+  image: string;
+  description:string;
+  id: number;
 }
 
-const CoffeeElement = ({ isLeft, isRight, name, description, image}: IElementProps) => {
+const CoffeeElement = ({ name, description, image, id}: IElementProps) => {
 
   return (
-    <ElementBox isLeft={isLeft} isRight={isRight}>
-      <InternBox isLeft={isLeft} isRight={isRight}>
+    <ElementBox >
+      <InternBox >
         <InternBoxGrid>
           <div>
             <ImageElement src={image}/>
@@ -22,7 +19,7 @@ const CoffeeElement = ({ isLeft, isRight, name, description, image}: IElementPro
             <CoffeeDescription>{description}</CoffeeDescription>
           </div>
           <CoffeeFooter>
-            <StyledButton/>
+            <StyledButton id={id}/>
           </CoffeeFooter>
         </InternBoxGrid>
       </InternBox>

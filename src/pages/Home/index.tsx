@@ -8,7 +8,6 @@ const Home = () => {
     <>
       <IntroLayout>
         <IntroElements />
-
         <ImageContainer>
           <img src={ImageCoffee} />
         </ImageContainer>
